@@ -1,8 +1,5 @@
 /*
  * Auto-attach ajax for forms
- *
- * usage:
- *
  */
 
 jQuery(function($){
