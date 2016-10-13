@@ -350,20 +350,19 @@ function sendToAPI($data=null){
 		
 		//IMPLEMENTAR METODO DE CAPTURA DE ERROR 
 		if ($response["success"] == false){
-			
-			echo "No se pudo cargar el dato por : ".$response["data"]; 
+            http_response_code(400);
+            echo '{"status": "error", "code": 400, "errors": [' . $response["data"] . ']}';
 			die();
 		} else {
-			
-            header('Location:/gracias-por-consultar-por-nuestros-planes/');
+            //header('Location:/gracias-por-consultar-por-nuestros-planes/');
+            http_response_code(200);
+            echo '{"status": "ok", "code": 200}';
 		}
 		
-	
 	// echo "<br> DEBUG (eliminar en produccion) :<br>"; 
 	// echo "<pre>"; 
 	// echo $output;
 	// echo "</pre>"; 
-
 
 	} catch (Exception $e) {
 			
