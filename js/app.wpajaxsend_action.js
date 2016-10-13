@@ -1,12 +1,12 @@
 jQuery(function($){
     if(window.dynaForm) {
         dynaForm
-            .on("fail", function(jqXHR, textStatus, errorThrown){
+            .on("fail", function(jqXHR, data, errorThrown){
                 if(window.grecaptcha){
                     grecaptcha.reset();
                 }
             })
-        .on("done", function(jqXHR, textStatus, errorThrown){ 
+        .on("done", function(jqXHR, data, errorThrown){ 
             var redirect_url = $("input[name=_object_form_success_url]", this).val();
             console.log("redirect to: ", redirect_url);
             $(this)[0].reset();
@@ -26,7 +26,7 @@ jQuery(function($){
                 window.location.href = final_url; 
             }
         })
-        .on("sending", function(jqXHR, textStatus, errorThrown){
+        .on("sending", function(jqXHR, data, errorThrown){
             $(".error", this).removeClass("error");
         });
 
