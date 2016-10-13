@@ -357,6 +357,7 @@ function sendToAPI($data=null){
             //header('Location:/gracias-por-consultar-por-nuestros-planes/');
             http_response_code(200);
             echo '{"status": "ok", "code": 200}';
+            die();
 		}
 		
 	// echo "<br> DEBUG (eliminar en produccion) :<br>"; 
