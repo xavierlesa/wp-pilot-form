@@ -80,8 +80,7 @@ jQuery(function($){
 
                 xhr.done(function(data, textStatus, jqXHR){
                     $(options.done_element).trigger(options.done_event, {data:data, textStatus:textStatus, jqXHR:jqXHR});
-	            $(this)[0].reset();
-	             console.log('clear form');
+                    console.log('clear form');
                 });
 
                 xhr.fail(function(jqXHR, textStatus, errorThrown){
@@ -104,7 +103,3 @@ jQuery(function($){
     });
 
 });
-
-
-
-
