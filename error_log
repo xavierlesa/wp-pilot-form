@@ -1,0 +1,3 @@
+[01-Aug-2016 21:01:50] PHP Fatal error:  Call to undefined function add_action() in /home/floren12/public_html/buenosaires/wp-content/plugins/pilot-form/pilot_form.php on line 897
+[01-Aug-2016 21:02:20] PHP Fatal error:  Call to undefined function add_action() in /home/floren12/public_html/buenosaires/wp-content/plugins/pilot-form/pilot_form.php on line 897
+[01-Aug-2016 21:02:40] PHP Fatal error:  Call to undefined function add_action() in /home/floren12/public_html/buenosaires/wp-content/plugins/pilot-form/pilot_form.php on line 897

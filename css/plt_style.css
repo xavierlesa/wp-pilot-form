@@ -1,0 +1,54 @@
+.plt_form{
+	padding:15px;
+	/*background-color: #f1f1f1;*/
+
+}
+
+.plt_form input[type=text], input[type=tel],input[type=email], select, textarea{
+	padding: 10px !important;
+    background-color: #ffffff;
+	width:90%;
+	border:none;
+	margin:10px 0px 10px 0px;
+	border-radius:5px;
+	border: 1px solid rgba(0, 103, 192, 0.15);
+	background-color: #ffffff;
+}
+.plt_form label{
+		color:#000000;
+		margin-bottom: 8px;
+		font-family: font-family: 'Roboto', sans-serif;
+		font-size:12px;
+		font-weight:700;
+		width:100%;
+		padding-top:10px;
+}
+
+.plt_form input[type='submit']{
+	color: #ffffff;
+    background-color: #142032;
+    line-height: 29px;
+    height: 100%;
+    font-family: font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+	text-transform:uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    letter-spacing: 1px;
+    width:100%;
+	border:none;
+	padding:10px 0px 10px 0px;
+}
+.plt_form input[type='submit']:hover{
+	background-color: rgb(62, 62, 62);
+	color:#ffffff;
+}
+.g-recaptcha{
+	margin:10px 0;
+}
+#captchaerror{
+	color:#ff0000;
+	font-size:14px;
+}
