@@ -38,7 +38,7 @@ function pilot_form_scripts(){
 	try {
     	//wp_register_script('pilot-form', plugins_url('wp-pilot-form/js/app.wpajaxsend.js'));
 	    wp_enqueue_script('pilot-form', plugins_url('wp-pilot-form/js/app.wpajaxsend.js'), array('jquery'));
-	    wp_enqueue_script('pilot-form', plugins_url('wp-pilot-form/js/app.wpajaxsend_action.js'));
+	    wp_enqueue_script('pilot-form-action', plugins_url('wp-pilot-form/js/app.wpajaxsend_action.js'), array(), null, true);
 	} catch (Exception $e) {	
 		echo "pilot_form_scripts()->:".$e->getMessage();
 		die();		
