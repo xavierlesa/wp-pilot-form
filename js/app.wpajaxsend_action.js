@@ -10,6 +10,20 @@ jQuery(function($){
             var redirect_url = $("input[name=_object_form_success_url]", this).val();
             console.log("redirect to: ", redirect_url);
             $(this)[0].reset();
+
+            // google track
+            if(window.ga) {
+                ga('send', 'pageview', {
+                    'page': (function(){ return window.location.href })(),
+                    'title': (function() { return window.document.title })()
+                });
+            }
+
+            // facebook track
+            if(window.fqb) {
+                fbq('track', 'Lead');            
+            }
+
             if(!redirect_url || redirect_url == "/"){
                 window.location.href = "?do=gracias&dt=" + data.data.dt;
             } else {
