@@ -55,7 +55,8 @@ function pilot_contact_form_tag_func( $atts ) {
 		$a = shortcode_atts( array(
 			'appkey' => CONST_APP_KEY,
             'origincode' => 'default_origincode',
-            'sitekey' => CONST_RECAPTCHA_SITEKEY
+            'sitekey' => CONST_RECAPTCHA_SITEKEY,
+            'business_type_id' => 1,
 		), $atts );
 
         $r = rand() * 123;
@@ -66,7 +67,7 @@ function pilot_contact_form_tag_func( $atts ) {
         .'        <input type="hidden" name="_plt_appkey" value="' . $a['appkey'] . '">'
         .'        <input type="hidden" name="_plt_origincode" value="' . $a['origincode'] . '">'
         .'        <input type="hidden" name="_plt_contact_type_id" value="1">'
-        .'        <input type="hidden" name="_plt_business_type_id" value="1">'
+        .'        <input type="hidden" name="_plt_business_type_id" value="' . $a['business_type_id'] . '">'
         .'        <input type="hidden" name="_plt_is_post_call" value="1">'
         .'        <input type="hidden" name="_plt_form_type" value="plt_form_gl">'
         .'    </div>'
