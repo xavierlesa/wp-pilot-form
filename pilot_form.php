@@ -357,7 +357,8 @@ function sendToAPI($data=null){
 		} else {
             //header('Location:/gracias-por-consultar-por-nuestros-planes/');
             http_response_code(200);
-            echo '{"status": "ok", "code": 200, "data": {"dt": ' . $response["data"]["id"] . '}}';
+            //echo nl2br( var_export($response['data']['data']['welcome_id'], 1));
+            echo '{"status": "ok", "code": 200, "data": {"dt": ' . $response['data']['data']['welcome_id'] . '}}';
             die();
 		}
 		
